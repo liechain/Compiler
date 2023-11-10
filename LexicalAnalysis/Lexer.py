@@ -9,14 +9,6 @@ class Token:
     def __str__(self):
         return f"Token({self.value}, {self.token_type})"
 
-class Token:
-    def __init__(self, value, token_type):
-        self.value = value
-        self.token_type = token_type
-
-    def __str__(self):
-        return f"Token({self.value}, {self.token_type})"
-
 class Lexer:
     def __init__(self, source_code):
         self.source_code = source_code
